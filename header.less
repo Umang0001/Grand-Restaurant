@@ -1,0 +1,252 @@
+@import "./variables.less";
+
+.header-main {
+
+    // font-family: 'Lato', sans-serif;
+    .wrapper-div {
+        background-color: @primary-color;
+    }
+
+    .contacts-info-wrapper {
+        height: 40px;
+        // justify-content: space-between;
+        // margin: auto;
+        color: @white-color;
+    }
+
+    .top-header {
+        height: calc(100vh - 40px);
+        // width: 100%;
+        position: relative;
+        // top: 0;
+        background: url("https://themes.themegoods.com/grandrestaurantv6/wp-content/uploads/2020/12/assorted-chinese-dishes-42WBYHV-1.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 1;
+
+        &::before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: @black-color;
+            opacity: 0.2;
+            z-index: -1;
+        }
+
+        .header {
+            &:extend(.d-flex);
+            justify-content: space-between;
+            padding: 30px 0;
+
+            .restaurant-name {
+                flex-basis: 30%;
+                color: white;
+                display: flex;
+                flex-direction: column;
+
+                h2 {
+                    font-size: 32px;
+                    font-weight: 900;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                }
+
+                span {
+                    letter-spacing: 3px;
+                    font-size: 12px;
+                    padding-left: 6px;
+                    line-height: 0;
+                    text-transform: uppercase;
+                }
+
+            }
+
+            .navigation-row {
+                flex-basis: 54%;
+
+                .menubar {
+                    position: relative;
+                    list-style: none;
+
+                    &>li {
+                        margin: 0 20px;
+                        // list-style: none;
+                        position: relative;
+                        line-height: 35px;
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 87%;
+                            left: 0;
+                            background: @primary-color;
+                            height: 2px;
+                            width: 0;
+                            transition: all 0.2s ease-in;
+                        }
+
+                        &:hover {
+
+                            // color: @primary-color;
+                            a {
+                                color: @primary-color;
+                            }
+
+                            &::before {
+                                width: 100%;
+                            }
+
+                        }
+
+                        a {
+                            color: @white-color;
+                            text-decoration: none;
+                            font-weight: 600;
+
+                            &::after {
+                                content: "\f107";
+                                font-family: fontAwesome;
+                                margin-left: 8px;
+                            }
+                        }
+                    }
+
+                    .blog-wrapper {
+                        position: absolute;
+                        top: 34px;
+                        right: -157px;
+                        color: @black-color;
+                        text-align: left;
+                        border-radius: 5px;
+                        background: @white-color;
+                        height: 0;
+                        transform: translate(0, -15px);
+                        opacity: 0;
+                        visibility: hidden;
+                        overflow: hidden;
+                        transition: all 0.3s ease-in;
+
+                        li {
+                            padding: 7px 20px;
+                            font-weight: bolder;
+
+                            &:first-child {
+                                margin-top: 22px;
+                            }
+
+                            &:last-child {
+                                margin-bottom: 22px;
+                            }
+                        }
+                    }
+
+                    .x:hover {
+                        .blog-wrapper {
+                            height: auto;
+                            opacity: 1;
+                            visibility: visible;
+                            overflow: visible;
+                            transform: translate(0, 0);
+                        }
+                    }
+                }
+
+                .register-btn {
+                    width: 100%;
+                    justify-content: flex-end;
+
+                    button {
+                        width: 135px;
+                        height: 43px;
+                        padding: 10px 24px;
+                        border: 2px solid @white-color;
+                        border-radius: 5px;
+                        background: none;
+                        color: @white-color;
+
+                        &:hover {
+                            background-color: @primary-color;
+                            border-color: @primary-color;
+                            transition: all 0.3s ease-in;
+                        }
+
+                        span {
+                            font-weight: 900;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .banner-text-wrapper {
+        color: @white-color;
+        width: 100%;
+
+        .banner-welcome {
+            text-align: center;
+            font-family: @secondary-font-family;
+            font-size: 75px;
+            color: @primary-color;
+        }
+
+        .banner-title {
+            span {
+                text-align: center;
+                font-weight: 900;
+                display: block;
+                line-height: 1;
+
+                &:nth-child(1) {
+                    font-size: 110px;
+                }
+
+                &:nth-child(2) {
+                    font-size: 62px;
+                }
+            }
+
+        }
+
+
+
+        .banner-sub-title,
+        .banner-year {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .banner-sub-title {
+            margin: 33px 0;
+        }
+
+        .banner-year {
+            position: relative;
+            width: max-content;
+            margin: auto;
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+                background-color: @white-color;
+            }
+
+            &::before {
+                left: -16px;
+            }
+
+            &::after {
+                right: -17px;
+            }
+        }
+    }
+}

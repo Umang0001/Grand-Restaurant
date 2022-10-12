@@ -1,0 +1,119 @@
+footer {
+  background-color: #262626;
+  color: #ffffff;
+}
+footer ul {
+  list-style: none;
+}
+footer .footer-top {
+  font-size: 16px;
+  padding: 100px 0;
+  display: flex;
+}
+footer .footer-top .fa::before {
+  font-size: 21px;
+}
+footer .footer-top .description {
+  width: 23%;
+  margin-right: 40px;
+}
+footer .footer-top .description > li img {
+  width: 120px;
+  height: 40px;
+}
+footer .footer-top .description > li:nth-child(2) {
+  line-height: 1.8;
+  margin: 20px 0;
+  font-size: 16px;
+}
+footer .footer-top .description > li:nth-child(3) ul {
+  display: flex;
+  gap: 20px;
+}
+footer .footer-top .overview,
+footer .footer-top .resources {
+  width: 13%;
+}
+footer .footer-top .overview li,
+footer .footer-top .resources li {
+  margin-bottom: 15px;
+}
+footer .footer-top .overview li:nth-child(1),
+footer .footer-top .resources li:nth-child(1) {
+  letter-spacing: 1.5px;
+  font-size: 13px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+footer .footer-top .contact-info {
+  width: 24%;
+  margin-right: 40px;
+}
+footer .footer-top .contact-info .vertical-align-text-bottom {
+  vertical-align: text-bottom;
+}
+footer .footer-top .contact-info .vertical-align-text-super {
+  vertical-align: super;
+}
+footer .footer-top .contact-info li {
+  margin-bottom: 15px;
+}
+footer .footer-top .contact-info li:nth-child(1) {
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 13px;
+}
+footer .footer-top .contact-info li i {
+  margin-right: 5px;
+}
+footer .footer-top .location {
+  width: 24%;
+}
+footer .footer-top .location li:nth-child(1) {
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 13px;
+}
+footer .footer-top .location li:nth-child(2) {
+  display: flex;
+}
+footer .footer-top .location li:nth-child(2) span:nth-child(1) {
+  flex-basis: 12%;
+  display: flex;
+  align-items: center;
+}
+footer .footer-top .location li:nth-child(2) span:nth-child(2) {
+  flex-basis: 68%;
+  line-height: 2;
+}
+footer .footer-bottom {
+  background: #1B1B1B;
+  padding: 15px 0;
+  position: relative;
+}
+footer .footer-bottom .container {
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-bottom .container ul {
+  display: flex;
+  gap: 30px;
+}
+footer .footer-bottom .container button {
+  position: fixed;
+  right: 8px;
+  bottom: 7px;
+  width: 45px;
+  height: 50px;
+  background-color: #eeeeee;
+  opacity: 0.5;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+footer .footer-bottom .container button:hover {
+  background-color: #ffffff;
+}

@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main .contacts-info-wrapper {
+  padding: 0 50px;
+  background-color: #CFA670;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+.main .contacts-info-wrapper .address-wrapper {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+.main .contacts-info-wrapper .address-wrapper .gps img {
+  height: 18px;
+  width: 13px;
+}
+.main .contacts-info-wrapper .address-wrapper .address {
+  font-size: 15px;
+}
+.main .contacts-info-wrapper .address-wrapper .call-icon img {
+  height: 18px;
+  width: 18px;
+}

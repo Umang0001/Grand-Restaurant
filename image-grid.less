@@ -1,0 +1,67 @@
+.image-grid-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    .image-grid-item {
+        position: relative;
+        flex-basis: 25%;
+        height: 324px;
+        background: url("https://themes-themegoods.b-cdn.net/grandrestaurantv6/wp-content/uploads/2014/07/toa-heftiba-MSxw2vpQzx4-unsplash-400x400.jpg");
+        background-position: center;
+        background-size: cover;
+
+        &:hover {
+            .hover-overlay {
+                opacity: 0.5;
+                visibility: visible;
+                transition: all 0.2s ease-in;
+            }
+
+            .hover-section {
+                opacity: 1;
+                visibility: visible;
+                top: 50%;
+                transition: all 0.2s ease-in;
+            }
+        }
+
+        .hover-overlay {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: @black-color;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .hover-section {
+            padding: 75px 20px;
+            color: @white-color;
+            height: 90%;
+            width: 90%;
+            border: 2px solid @white-color;
+            position: absolute;
+            top: 53%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            visibility: none;
+
+            .dish-title {
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 6px;
+            }
+
+            .ingriedients {
+                font-size: 13px;
+                margin-bottom: 30px;
+            }
+
+            .dish-price {
+                font-size: 18px;
+                font-weight: 700;
+            }
+        }
+    }
+}

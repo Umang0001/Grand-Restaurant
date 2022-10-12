@@ -1,0 +1,192 @@
+.header-main .wrapper-div {
+  background-color: #CFA670;
+}
+.header-main .contacts-info-wrapper {
+  height: 40px;
+  color: #ffffff;
+}
+.header-main .top-header {
+  height: calc(100vh - 40px);
+  position: relative;
+  background: url("https://themes.themegoods.com/grandrestaurantv6/wp-content/uploads/2020/12/assorted-chinese-dishes-42WBYHV-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.header-main .top-header::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #000000;
+  opacity: 0.2;
+  z-index: -1;
+}
+.header-main .top-header .header {
+  justify-content: space-between;
+  padding: 30px 0;
+}
+.header-main .top-header .header .restaurant-name {
+  flex-basis: 30%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.header-main .top-header .header .restaurant-name h2 {
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.header-main .top-header .header .restaurant-name span {
+  letter-spacing: 3px;
+  font-size: 12px;
+  padding-left: 6px;
+  line-height: 0;
+  text-transform: uppercase;
+}
+.header-main .top-header .header .navigation-row {
+  flex-basis: 54%;
+}
+.header-main .top-header .header .navigation-row .menubar {
+  position: relative;
+  list-style: none;
+}
+.header-main .top-header .header .navigation-row .menubar > li {
+  margin: 0 20px;
+  position: relative;
+  line-height: 35px;
+}
+.header-main .top-header .header .navigation-row .menubar > li::before {
+  content: "";
+  position: absolute;
+  top: 87%;
+  left: 0;
+  background: #CFA670;
+  height: 2px;
+  width: 0;
+  transition: all 0.2s ease-in;
+}
+.header-main .top-header .header .navigation-row .menubar > li:hover a {
+  color: #CFA670;
+}
+.header-main .top-header .header .navigation-row .menubar > li:hover::before {
+  width: 100%;
+}
+.header-main .top-header .header .navigation-row .menubar > li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.header-main .top-header .header .navigation-row .menubar > li a::after {
+  content: "\f107";
+  font-family: fontAwesome;
+  margin-left: 8px;
+}
+.header-main .top-header .header .navigation-row .menubar .blog-wrapper {
+  position: absolute;
+  top: 34px;
+  right: -157px;
+  color: #000000;
+  text-align: left;
+  border-radius: 5px;
+  background: #ffffff;
+  height: 0;
+  transform: translate(0, -15px);
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition: all 0.3s ease-in;
+}
+.header-main .top-header .header .navigation-row .menubar .blog-wrapper li {
+  padding: 7px 20px;
+  font-weight: bolder;
+}
+.header-main .top-header .header .navigation-row .menubar .blog-wrapper li:first-child {
+  margin-top: 22px;
+}
+.header-main .top-header .header .navigation-row .menubar .blog-wrapper li:last-child {
+  margin-bottom: 22px;
+}
+.header-main .top-header .header .navigation-row .menubar .x:hover .blog-wrapper {
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+  overflow: visible;
+  transform: translate(0, 0);
+}
+.header-main .top-header .header .navigation-row .register-btn {
+  width: 100%;
+  justify-content: flex-end;
+}
+.header-main .top-header .header .navigation-row .register-btn button {
+  width: 135px;
+  height: 43px;
+  padding: 10px 24px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  background: none;
+  color: #ffffff;
+}
+.header-main .top-header .header .navigation-row .register-btn button:hover {
+  background-color: #CFA670;
+  border-color: #CFA670;
+  transition: all 0.3s ease-in;
+}
+.header-main .top-header .header .navigation-row .register-btn button span {
+  font-weight: 900;
+}
+.header-main .banner-text-wrapper {
+  color: #ffffff;
+  width: 100%;
+}
+.header-main .banner-text-wrapper .banner-welcome {
+  text-align: center;
+  font-family: 'Kristi', cursive;
+  font-size: 75px;
+  color: #CFA670;
+}
+.header-main .banner-text-wrapper .banner-title span {
+  text-align: center;
+  font-weight: 900;
+  display: block;
+  line-height: 1;
+}
+.header-main .banner-text-wrapper .banner-title span:nth-child(1) {
+  font-size: 110px;
+}
+.header-main .banner-text-wrapper .banner-title span:nth-child(2) {
+  font-size: 62px;
+}
+.header-main .banner-text-wrapper .banner-sub-title,
+.header-main .banner-text-wrapper .banner-year {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+.header-main .banner-text-wrapper .banner-sub-title {
+  margin: 33px 0;
+}
+.header-main .banner-text-wrapper .banner-year {
+  position: relative;
+  width: max-content;
+  margin: auto;
+}
+.header-main .banner-text-wrapper .banner-year::before,
+.header-main .banner-text-wrapper .banner-year::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.header-main .banner-text-wrapper .banner-year::before {
+  left: -16px;
+}
+.header-main .banner-text-wrapper .banner-year::after {
+  right: -17px;
+}

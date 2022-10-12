@@ -1,0 +1,38 @@
+.about-us {
+  padding: 80px 0;
+}
+.about-us-title span {
+  display: block;
+  text-align: center;
+}
+.about-us-title span:nth-child(1) {
+  font-family: 'Kristi', cursive;
+  font-size: 65px;
+  line-height: 65px;
+  color: #CFA670;
+}
+.about-us-title span:nth-child(2) {
+  font-size: 55px;
+  line-height: 1;
+  color: #000;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+.about-us .leaf-img {
+  display: block;
+  margin: auto;
+  width: 18px;
+  height: 25px;
+  opacity: 0.3;
+  margin-bottom: 15px;
+}
+.about-us-description {
+  width: 100%;
+  max-width: 702px;
+  margin: auto;
+  font-size: 16px;
+  line-height: 28.8px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 30px;
+}

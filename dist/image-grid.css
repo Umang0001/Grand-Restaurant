@@ -1,0 +1,17 @@
+.image-grid-wrapper {
+  color: red;
+  display: flex;
+  flex-wrap: wrap;
+}
+.image-grid-wrapper .image-grid-item {
+  position: relative;
+  flex-basis: 25%;
+  height: 324px;
+  background: url("https://themes-themegoods.b-cdn.net/grandrestaurantv6/wp-content/uploads/2014/07/toa-heftiba-MSxw2vpQzx4-unsplash-400x400.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.image-grid-wrapper .image-grid-item .hover-section {
+  height: 80%;
+  width: 80%;
+}
