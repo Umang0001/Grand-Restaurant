@@ -4,10 +4,11 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Lato", sans-serif;
+  font-family: lato, sans-serif;
   font-size: 15px;
   min-height: 200vh;
   line-height: 1.42;
+  color: #000;
 }
 .d-flex {
   display: flex;
@@ -16,6 +17,9 @@ body {
 }
 .text-center {
   text-align: center;
+}
+.text-left {
+  text-align: left;
 }
 .container {
   max-width: 1170px;
