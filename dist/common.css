@@ -21,6 +21,9 @@ body {
 .text-left {
   text-align: left;
 }
+.text-right {
+  text-align: right;
+}
 .container {
   max-width: 1170px;
   margin: 0 auto;
