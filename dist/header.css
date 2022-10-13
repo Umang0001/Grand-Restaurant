@@ -148,7 +148,7 @@
   visibility: hidden;
   opacity: 0;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-color: #000;
   opacity: 0.3;
   z-index: -1;
@@ -166,7 +166,7 @@
   border: 1px solid black;
   height: 100vh;
   padding: 35px 30px;
-  width: 30%;
+  width: 50%;
   transition: all 0.3s ease-in;
   z-index: 1;
   background-color: #000;
@@ -188,6 +188,12 @@
   top: 50%;
   transform: translateY(-50%);
 }
+.header-main .top-header .header .navigation-row .burger-menu-icon .burger-menu-section .register-btn {
+  margin-top: 40px;
+}
+.header-main .top-header .header .navigation-row .burger-menu-icon .burger-menu-section .register-btn button {
+  width: 100%;
+}
 .header-main .banner-text-wrapper {
   color: #fff;
   width: 100%;
@@ -198,17 +204,17 @@
   font-size: 75px;
   color: #CFA670;
 }
+.header-main .banner-text-wrapper .banner-title .banner-title-sub-text1 {
+  font-size: 110px;
+}
+.header-main .banner-text-wrapper .banner-title .banner-title-sub-text2 {
+  font-size: 62px;
+}
 .header-main .banner-text-wrapper .banner-title span {
   text-align: center;
   font-weight: 900;
   display: block;
   line-height: 1;
-}
-.header-main .banner-text-wrapper .banner-title span:nth-child(1) {
-  font-size: 110px;
-}
-.header-main .banner-text-wrapper .banner-title span:nth-child(2) {
-  font-size: 62px;
 }
 .header-main .banner-text-wrapper .banner-sub-title,
 .header-main .banner-text-wrapper .banner-year {
@@ -247,5 +253,11 @@
   }
   .header-main .top-header .header .navigation-row .burger-menu-icon {
     display: block;
+  }
+  .header-main .banner-text-wrapper .banner-title .banner-title-sub-text1 {
+    font-size: 75px;
+  }
+  .header-main .banner-text-wrapper .banner-title .banner-title-sub-text2 {
+    font-size: 31px;
   }
 }

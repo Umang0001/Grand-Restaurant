@@ -8,6 +8,7 @@
     }
 
     .contacts-info-wrapper {
+        &:extend(.d-flex);
         height: 40px;
         // justify-content: space-between;
         // margin: auto;
@@ -64,10 +65,12 @@
             }
 
             .navigation-row {
+                &:extend(.d-flex);
                 // flex-basis: 54%;
 
                 .menubar {
                     // display: block;
+                    &:extend(.d-flex);
                     position: relative;
                     list-style: none;
 
@@ -155,6 +158,7 @@
                 }
 
                 .register-btn {
+                    &:extend(.d-flex);
                     width: 100%;
                     justify-content: flex-end;
                     margin-right: 20px;
@@ -192,7 +196,7 @@
                         visibility: hidden;
                         opacity: 0;
                         height: 100vh;
-                        width: 100vw;
+                        width: 100%;
                         background-color: @black-color;
                         opacity: 0.3;
                         z-index: -1;
@@ -211,7 +215,7 @@
                         border: 1px solid black;
                         height: 100vh;
                         padding: 35px 30px;
-                        width: 30%;
+                        width: 50%;
                         transition: all .3s ease-in;
                         z-index: 1;
                         background-color: @black-color;
@@ -236,6 +240,15 @@
                             }
 
                         }
+
+                        .register-btn {
+                            margin-top: 40px;
+
+                            button {
+
+                                width: 100%;
+                            }
+                        }
                     }
                 }
             }
@@ -254,19 +267,20 @@
         }
 
         .banner-title {
+            .banner-title-sub-text1 {
+                font-size: 110px;
+            }
+
+            .banner-title-sub-text2 {
+                font-size: 62px;
+            }
+
             span {
                 text-align: center;
                 font-weight: 900;
                 display: block;
                 line-height: 1;
 
-                &:nth-child(1) {
-                    font-size: 110px;
-                }
-
-                &:nth-child(2) {
-                    font-size: 62px;
-                }
             }
 
         }
@@ -327,6 +341,21 @@
                     }
                 }
             }
+        }
+
+        .banner-text-wrapper {
+            .banner-title {
+                .banner-title-sub-text1 {
+                    font-size: 75px;
+                }
+
+                .banner-title-sub-text2 {
+                    font-size: 31px;
+                }
+
+
+            }
+
         }
     }
 }

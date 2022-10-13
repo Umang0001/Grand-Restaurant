@@ -1,22 +1,22 @@
 .about-us {
   padding: 80px 0;
 }
-.about-us-title span {
-  display: block;
-  text-align: center;
-}
-.about-us-title span:nth-child(1) {
+.about-us-title .about-us-sub-text1 {
   font-family: 'Kristi', cursive;
   font-size: 65px;
   line-height: 65px;
   color: #CFA670;
 }
-.about-us-title span:nth-child(2) {
+.about-us-title .about-us-sub-text2 {
   font-size: 55px;
   line-height: 1;
   color: #000;
   font-weight: 900;
   margin-bottom: 10px;
+}
+.about-us-title span {
+  display: block;
+  text-align: center;
 }
 .about-us .leaf-img {
   display: block;
@@ -35,4 +35,9 @@
   color: #000;
   text-align: center;
   margin-bottom: 30px;
+}
+.about-us-author {
+  font-size: 40px;
+  font-family: 'Kristi', cursive;
+  text-align: center;
 }

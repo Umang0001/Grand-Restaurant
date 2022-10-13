@@ -11,7 +11,11 @@ body {
   color: #000;
 }
 .d-flex,
-.header-main .top-header .header {
+.header-main .contacts-info-wrapper,
+.header-main .top-header .header,
+.header-main .top-header .header .navigation-row,
+.header-main .top-header .header .navigation-row .menubar,
+.header-main .top-header .header .navigation-row .register-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -188,7 +192,7 @@ body {
   visibility: hidden;
   opacity: 0;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-color: #000;
   opacity: 0.3;
   z-index: -1;
@@ -206,7 +210,7 @@ body {
   border: 1px solid black;
   height: 100vh;
   padding: 35px 30px;
-  width: 30%;
+  width: 50%;
   transition: all 0.3s ease-in;
   z-index: 1;
   background-color: #000;
@@ -228,6 +232,12 @@ body {
   top: 50%;
   transform: translateY(-50%);
 }
+.header-main .top-header .header .navigation-row .burger-menu-icon .burger-menu-section .register-btn {
+  margin-top: 40px;
+}
+.header-main .top-header .header .navigation-row .burger-menu-icon .burger-menu-section .register-btn button {
+  width: 100%;
+}
 .header-main .banner-text-wrapper {
   color: #fff;
   width: 100%;
@@ -238,17 +248,17 @@ body {
   font-size: 75px;
   color: #CFA670;
 }
+.header-main .banner-text-wrapper .banner-title .banner-title-sub-text1 {
+  font-size: 110px;
+}
+.header-main .banner-text-wrapper .banner-title .banner-title-sub-text2 {
+  font-size: 62px;
+}
 .header-main .banner-text-wrapper .banner-title span {
   text-align: center;
   font-weight: 900;
   display: block;
   line-height: 1;
-}
-.header-main .banner-text-wrapper .banner-title span:nth-child(1) {
-  font-size: 110px;
-}
-.header-main .banner-text-wrapper .banner-title span:nth-child(2) {
-  font-size: 62px;
 }
 .header-main .banner-text-wrapper .banner-sub-title,
 .header-main .banner-text-wrapper .banner-year {
@@ -288,26 +298,32 @@ body {
   .header-main .top-header .header .navigation-row .burger-menu-icon {
     display: block;
   }
+  .header-main .banner-text-wrapper .banner-title .banner-title-sub-text1 {
+    font-size: 75px;
+  }
+  .header-main .banner-text-wrapper .banner-title .banner-title-sub-text2 {
+    font-size: 31px;
+  }
 }
 .about-us {
   padding: 80px 0;
 }
-.about-us-title span {
-  display: block;
-  text-align: center;
-}
-.about-us-title span:nth-child(1) {
+.about-us-title .about-us-sub-text1 {
   font-family: 'Kristi', cursive;
   font-size: 65px;
   line-height: 65px;
   color: #CFA670;
 }
-.about-us-title span:nth-child(2) {
+.about-us-title .about-us-sub-text2 {
   font-size: 55px;
   line-height: 1;
   color: #000;
   font-weight: 900;
   margin-bottom: 10px;
+}
+.about-us-title span {
+  display: block;
+  text-align: center;
 }
 .about-us .leaf-img {
   display: block;
@@ -326,6 +342,11 @@ body {
   color: #000;
   text-align: center;
   margin-bottom: 30px;
+}
+.about-us-author {
+  font-size: 40px;
+  font-family: 'Kristi', cursive;
+  text-align: center;
 }
 .image-grid-wrapper {
   display: flex;
@@ -387,7 +408,7 @@ body {
 @media only screen and (max-width: 1024px) {
   .image-grid-wrapper .image-grid-item {
     flex-basis: 100%;
-    height: 100vh;
+    height: 300px;
   }
 }
 footer {
@@ -512,7 +533,7 @@ footer .footer-bottom .container button:hover {
 @media only screen and (max-width: 1024px) {
   footer .footer-top {
     flex-wrap: wrap;
-    padding: 60px 0 0 20px;
+    padding: 60px 0 0 20px !important;
   }
   footer .footer-top .description,
   footer .footer-top .contact-info,
